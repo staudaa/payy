@@ -1,3 +1,8 @@
+#Nama   : Siti Raudatul Jannah
+#NIM    : 242410103048
+
+
+#Soal NO 1
 angka = int(input("angka akhir: ")) 
         
 if 1 <= angka <= 999 :
@@ -15,5 +20,4 @@ if 1 <= angka <= 999 :
 else :
     print("angka diluar kondisi")
 
-        
-        
+#Soal NO 2
