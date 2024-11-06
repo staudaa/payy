@@ -1,17 +1,15 @@
-awal = int(input())
-akhir = int(input())
+data = input()
+data_split = data.split(" ")
 
-print()
-if(0 < awal < akhir < 100):
-    count = 0
-    for i in range(awal+1, akhir+1):
-        prima = True
-        for j in range(2, i):
-            if i % j == 0:
-                prima = False
-                break
-        if(prima):
-            count = count+1
-    print(count)
-else:
-    print("bB")
+count = 0
+for i in data_split :
+    if i.isalpha():
+        if (i == "e" ) :
+            count += 1
+            continue
+        elif (i == "d" ) :
+            count += 1
+            continue
+    else :
+        print("Inputan Harus Berupa Alphabet!")
+    # print(count)
