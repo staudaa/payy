@@ -1,14 +1,17 @@
-prima = int(input())    
-    
-jumlah = 0
-for num in range(5, 15):
-    for i in range(3, num):
-        if num % i == 0:
-            break
-    else : 
-        n = (num % i)
-        while n > 0:
-            n //= 10
-            jumlah += 1
+awal = int(input())
+akhir = int(input())
 
-        print(jumlah)
+print()
+if(0 < awal < akhir < 100):
+    count = 0
+    for i in range(awal+1, akhir+1):
+        prima = True
+        for j in range(2, i):
+            if i % j == 0:
+                prima = False
+                break
+        if(prima):
+            count = count+1
+    print(count)
+else:
+    print("bB")
