@@ -3,7 +3,7 @@
 
 
 #Soal NO 1
-angka = int(input("angka akhir: ")) 
+angka = int(input()) 
         
 if 1 <= angka <= 999 :
     for j in range (1, angka+1) :
@@ -37,4 +37,38 @@ if(0 < awal < akhir < 100):
             count = count+1
     print(count)
 else:
-    print("bB")
+    print("Angka diluar kondisi")
+    
+
+#Soal NO 3
+kata = input()
+
+huruf = {}
+for i in kata:
+    if(i == " "):
+        continue
+    elif huruf == {}:
+        huruf.update({i:1})
+    else:
+        if(huruf.get(i)):
+            huruf.update({i:(huruf.get(i)+1)})
+        else:
+            huruf.update({i:1})
+
+for alp in huruf:
+    print("Huruf:", alp, ": Jumlah: ", huruf.get(alp))
+    
+    
+#Soal NO 4
+data = input()
+data_split = data.split(" ")
+
+count = 0
+for i in data_split :
+    if i.isalpha():
+        if 'e' in i or 'd' in i:
+            count += 1
+    else :
+        print("Inputan Harus Berupa Alphabet!")
+print(count)
+
