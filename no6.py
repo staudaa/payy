@@ -14,7 +14,7 @@ for i in masukan:
             break
 posisi = ""
 aaa = True
-print(tangan)
+# print(tangan)
 for i in tangan:
     if i == 0:
         if posisi == "kiri":

@@ -1,18 +1,2 @@
-kata = input()
-
-# listKata = kata.split()
-# print(listKata)
-huruf = {}
-for i in kata:
-    if(i == " "):
-        continue
-    elif huruf == {}:
-        huruf.update({i:1})
-    else:
-        if(huruf.get(i)):
-            huruf.update({i:(huruf.get(i)+1)})
-        else:
-            huruf.update({i:1})
-
-for alp in huruf:
-    print("Huruf:", alp, ": Jumlah: ", huruf.get(alp))
+kanan = ["y, u, i, o, p, h, j, k, l, n, m"]
+kiri = ["q, w, e, r, t, a, s, d, f, g, z, x, c, v, b"]

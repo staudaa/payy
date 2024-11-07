@@ -75,7 +75,7 @@ print(count)
 
 #Soal NO 5
 angka = input()
-angka_split = angka.split(",")
+angka_split = angka.split(", ")
 target = input()
 hasil = int(target)
 
@@ -90,4 +90,39 @@ print(kosong)
 
 
 #Soal NO 6
+kiri = ["q", "w", "e", "r", "t", "a", "s", "d", "f", "g", "z", "x", "c", "v", "b"]
+kanan = ["y", "u", "i", "o", "p", "h", "j", "k", "l", "n", "m"]
+kata = input()
+tangan = [] # 0 = kiri, 1 = kanan
+
+for i in kata:
+    for j in kiri:
+        if i == j:
+            tangan.append(0)
+            break
+    for j in kanan:
+        if i == j:
+            tangan.append(1)
+            break
+posisi = ""
+hasil = True
+for i in tangan:
+    if i == 0:
+        if posisi == "kiri":
+            hasil = False
+            break
+        else:
+            posisi = "kiri"
+    else:
+        if posisi == "kanan":
+            hasil = False
+            break
+        else:
+            posisi = "kanan"
+print(hasil)
+
+
+#Soal NO 7
+message = input()
+messagee = input()
 
