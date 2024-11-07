@@ -1,12 +1,14 @@
-data = input()
-data_split = data.split(" ")
+angka = input()
+angka_split = angka.split(",")
+target = input()
+hasil = int(target)
 
-count = 0
-for i in data_split :
-    if i.isalpha():
-        if 'e' in i or 'd' in i:
-            count += 1
-    else :
-        print("Inputan Harus Berupa Alphabet!")
-print(count)
+
+kosong = []
+for i in angka_split :
+    for j in angka_split :
+        if int(i) + int(j) == hasil :
+            kosong.append([i, j])
+            angka_split.remove(j)
+print(kosong)
 

@@ -72,3 +72,22 @@ for i in data_split :
         print("Inputan Harus Berupa Alphabet!")
 print(count)
 
+
+#Soal NO 5
+angka = input()
+angka_split = angka.split(",")
+target = input()
+hasil = int(target)
+
+
+kosong = []
+for i in angka_split :
+    for j in angka_split :
+        if int(i) + int(j) == hasil :
+            kosong.append([i, j])
+            angka_split.remove(j)
+print(kosong)
+
+
+#Soal NO 6
+
